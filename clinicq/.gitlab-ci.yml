@@ -1,0 +1,17 @@
+image: node:22
+
+stages:
+  - test
+
+cache:
+  key:
+    files:
+      - package-lock.json
+  paths:
+    - node_modules/
+
+test:
+  stage: test
+  script:
+    - npm ci
+    - npm test

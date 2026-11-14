@@ -1,0 +1,26 @@
+{
+  "name": "clinicq",
+  "version": "0.1.0",
+  "description": "Clinic appointment booking and live queue tracking (web MVP)",
+  "private": true,
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node src/seed.js",
+    "test": "node --test",
+    "seed:dhanori": "node src/seed-dhanori.js",
+    "claim": "node src/claim.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^11.7.0",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
